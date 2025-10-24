@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="fixed top-0 w-full bg-[white]">
+        <section class="px-[10px]">
+            <div class="container mx-auto max-w-[1200px] flex justify-between items-center pt-[20px] ">
+                <div class="flex justify-between items-center gap-2">
+                    <div class="flex justify-between items-center gap-2">
+                        <img src="./imgs/logo.png" alt="logo">
+                    </div>
+                    <div class="hidden lg:block">
+                        <p>CEVERONICHKA</p>
+                    </div>
+                </div>
+
+                <div class=" hidden sm:flex lg:flex items-center gap-3 bg-[#70C05B] px-[20px] py-[8px] rounded-md cursor-pointer text-[white] ">
+                    <div>
+                        <img src="./imgs/3 chiziq.png" alt="chiziq " class=" w-[20px] h-[20px] bg-[#70C05B] ">
+                    </div>
+                    <div class="hidden lg:block">
+                        <p>Katalog</p>
+                    </div>
+                </div>
+
+                <div class="relative max-w-[350px]">
+                        <img 
+                        src="./imgs/lupa.png" 
+                        alt="search" 
+                        class="absolute  top-1/2 transform -translate-y-1/2 w-[50px] h-[40px] left-[200px] lg:left-[290px]">
+                    
+                        <input 
+                        type="text" 
+                        placeholder="Search" 
+                        class=" p-2 pl-2 border border-green-500 rounded-[10px] 
+                        focus:outline-none placeholder-gray w-[290px] lg:w-[350px]">
+                </div>
+
+                <div class="hidden sm:hidden md:flex justify-between items-center gap-6">
+                    <div class="  flex flex-col items-center">
+                        <img src="./imgs/yure.png" alt="yure">
+                        <p class="text-[14px]">Like</p>
+                    </div>
+
+                    <div class=" flex flex-col items-center">
+                        <img src="./imgs/box.png" alt="box">
+                        <p class="text-[14px]">Products</p>
+                    </div>
+
+                    <div class="  flex flex-col items-center">
+                        <img src="./imgs/karzinka.png" alt="karzanka">
+                        <p class="text-[14px]">Karzinka</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                    <div class="flex items-center gap-[5px]">
+                        <img src="./imgs/avatar (1).png" alt="user">
+                    </div>
+                    <div class="hidden lg:block "> 
+                        <p>Aliksey</p>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    
+    </header>  
+    <main>
+        <section class="pt-[90px] px-[10px]">
+            <div class="container mx-auto max-w-[1200px] max-h-[400px]  bg-[url('./imgs/bargla.png')]">
+                <img src="./imgs/fructs.png" alt="art" class="max-w-full  "> 
+            </div>
+        </section>
+
+
+
+        <section>
+            <div class="container mx-auto max-w-[1200px] flex justify-between items-center px-[6px]  pt-[20px]">
+                <p class="text-[36px] font-bold ">Акции</p>
+                <p>More</p>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container mx-auto max-w-[1200px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   justify-items-center gap-8 px-[6px] pt-[60px] pb-[50px]">
+
+                <div class="max-w-[270px]">
+                    <img src="./imgs/blinchik.png" alt="art">
+                    <div class="flex justify-between items-center py-[10px]">
+                        <p>44,50$</p>
+                        <p class="pr-[8px]">50,50$</p>
+                    </div>
+                    <p>Meal ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <img src="./imgs/yulduz2.png" alt="img" class="py-[10px]">
+                    <button class="border-2 border-green-500 text-green-500 font-semibold py-2  px-23 rounded-lg hover:bg-orange-500 hover:border-orange-500 hover:text-white transition duration-300">
+                        В корзину
+                    </button>
+                </div>
+
+                <div class="max-w-[270px]">
+                    <img src="./imgs/sut.png" alt="art">
+                    <div class="flex justify-between items-center py-[10px]">
+                        <p>94,50$</p>
+                        <p class="pr-[8px]">20,71$</p>
+                    </div>
+                    <p>Beaf ipsum, dolor sit amet meal to eat.</p>
+                    <img src="./imgs/yulduz3.png" alt="img" class="py-[10px]">
+                    <button class="border-2 border-green-500 text-green-500 font-semibold py-2  px-23 rounded-lg hover:bg-orange-500 hover:border-orange-500 hover:text-white transition duration-300">
+                        В корзину
+                    </button>
+                </div>
+
+                <div class="max-w-[270px]">
+                    <img src="./imgs/kalbasa.png" alt="art">
+                    <div class="flex justify-between items-center py-[10px]">
+                        <p>24,40$</p>
+                        <p class="pr-[8px]">10,80$</p>
+                    </div>
+                    <p>Opsum, dolor sit amet consectetur adipisicing Suger.</p>
+                    <img src="./imgs/yulduz5.png" alt="img" class="py-[10px]">
+                    <button class="border-2 border-green-500 text-green-500 font-semibold py-2  px-23 rounded-lg hover:bg-orange-500 hover:border-orange-500 hover:text-white transition duration-300">
+                        В корзину
+                    </button>
+                </div>
+
+                <div class="max-w-[270px]">
+                    <img src="./imgs/sasika.png" alt="art">
+                    <div class="flex justify-between items-center py-[10px]">
+                        <p>40,50$</p>
+                        <p class="pr-[8px]">80,60$</p>
+                    </div>
+                    <p>Duit ipsum, dolor sit amet consectetur.</p>
+                    <img src="./imgs/yulduz4.5.png" alt="img" class="py-[10px]">
+                    <button class="border-2 border-green-500 text-green-500 font-semibold  py-2 px-23 rounded-lg hover:bg-orange-500 hover:border-orange-500 hover:text-white transition duration-300">
+                        В корзину
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="ontainer mx-auto max-w-[1200px] flex justify-between items-center px-[6px]  pt-[20px]">
+                <p class="text-[36px] font-bold ">Новинки</p>
+                <p>More</p>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container mx-auto max-w-[1200px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   justify-items-center gap-8 px-[6px] pt-[60px] pb-[50px]">
+
+                <div class="max-w-[270px]">
+                    <img src="./imgs/kolsa.png" alt="art">
+                    <div class="flex justify-between items-center py-[10px]">
+                        <p>24,50$</p>
+                    </div>
+                    <p>Meal ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <img src="./imgs/yulduz2.png" alt="img" class="py-[10px]">
+                    <button class="border-2 border-green-500 text-green-500 font-semibold py-2  px-23 rounded-lg hover:bg-orange-500 hover:border-orange-500 hover:text-white transition duration-300">
+                        В корзину
+                    </button>
+                </div>
+
+                <div class="max-w-[270px]">
+                    <img src="./imgs/sasika.png" alt="art">
+                    <div class="flex justify-between items-center py-[10px]">
+                        <p>94,50$</p>
+                    </div>
+                    <p>Beaf ipsum, dolor sit amet meal to eat.</p>
+                    <img src="./imgs/yulduz4.5.png" alt="img" class="py-[10px]">
+                    <button class="border-2 border-green-500 text-green-500 font-semibold py-2  px-23 rounded-lg hover:bg-orange-500 hover:border-orange-500 hover:text-white transition duration-300">
+                        В корзину
+                    </button>
+                </div>
+
+                <div class="max-w-[270px]">
+                    <img src="./imgs/kalbasa.png" alt="art">
+                    <div class="flex justify-between items-center py-[10px]">
+                        <p>84,40$</p>
+                    </div>
+                    <p>Opsum, dolor sit amet consectetur adipisicing Suger.</p>
+                    <img src="./imgs/yulduz5.png" alt="img" class="py-[10px]">
+                    <button class="border-2 border-green-500 text-green-500 font-semibold py-2  px-23 rounded-lg hover:bg-orange-500 hover:border-orange-500 hover:text-white transition duration-300">
+                        В корзину
+                    </button>
+                </div>
+
+                <div class="max-w-[270px]">
+                    <img src="./imgs/kolsa.png" alt="art">
+                    <div class="flex justify-between items-center py-[10px]">
+                        <p>40,50$</p>
+                    </div>
+                    <p>Duit ipsum, dolor sit amet consectetur.</p>
+                    <img src="./imgs/yulduz2.png" alt="img" class="py-[10px]">
+                    <button class="border-2 border-green-500 text-green-500 font-semibold  py-2 px-23 rounded-lg hover:bg-orange-500 hover:border-orange-500 hover:text-white transition duration-300">
+                        В корзину
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="ontainer mx-auto max-w-[1200px] flex justify-between items-center px-[6px]  pt-[20px]">
+                <p class="text-[36px] font-bold ">Покупали раньше</p>
+                <p>More</p>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container mx-auto max-w-[1200px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   justify-items-center gap-8 px-[6px] pt-[60px] pb-[50px]">
+
+                <div class="max-w-[270px]">
+                    <img src="./imgs/blinchik.png" alt="art">
+                    <div class="flex justify-between items-center py-[10px]">
+                        <p>24,50$</p>
+                    </div>
+                    <p>Meal ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <img src="./imgs/yulduz2.png" alt="img" class="py-[10px]">
+                    <button class="border-2 border-green-500 text-green-500 font-semibold py-2  px-23 rounded-lg hover:bg-orange-500 hover:border-orange-500 hover:text-white transition duration-300">
+                        В корзину
+                    </button>
+                </div>
+
+                <div class="max-w-[270px]">
+                    <img src="./imgs/sut.png" alt="art">
+                    <div class="flex justify-between items-center py-[10px]">
+                        <p>94,50$</p>
+                    </div>
+                    <p>Beaf ipsum, dolor sit amet meal to eat.</p>
+                    <img src="./imgs/yulduz4.5.png" alt="img" class="py-[10px]">
+                    <button class="border-2 border-green-500 text-green-500 font-semibold py-2  px-23 rounded-lg hover:bg-orange-500 hover:border-orange-500 hover:text-white transition duration-300">
+                        В корзину
+                    </button>
+                </div>
+
+                <div class="max-w-[270px]">
+                    <img src="./imgs/sasika.png" alt="art">
+                    <div class="flex justify-between items-center py-[10px]">
+                        <p>84,40$</p>
+                    </div>
+                    <p>Opsum, dolor sit amet consectetur adipisicing Suger.</p>
+                    <img src="./imgs/yulduz5.png" alt="img" class="py-[10px]">
+                    <button class="border-2 border-green-500 text-green-500 font-semibold py-2  px-23 rounded-lg hover:bg-orange-500 hover:border-orange-500 hover:text-white transition duration-300">
+                        В корзину
+                    </button>
+                </div>
+
+                <div class="max-w-[270px]">
+                    <img src="./imgs/kolsa.png" alt="art">
+                    <div class="flex justify-between items-center py-[10px]">
+                        <p>40,50$</p>
+                    </div>
+                    <p>Duit ipsum, dolor sit amet consectetur.</p>
+                    <img src="./imgs/yulduz4.5.png" alt="img" class="py-[10px]">
+                    <button class="border-2 border-green-500 text-green-500 font-semibold  py-2 px-23 rounded-lg hover:bg-orange-500 hover:border-orange-500 hover:text-white transition duration-300">
+                        В корзину
+                    </button>
+                </div>
+
+            </div>
+        </section>
+        
+
+
+
+        <section>
+            <div class="ontainer mx-auto max-w-[1200px] flex justify-between items-center px-[6px]  pt-[20px]">
+                <p class="text-[36px] font-bold ">Специальные предложения</p>
+                <p>More</p>
+            </div>
+        </section>
+
+
+        <section class="pb-[30px] pt-[60px]">
+            <div class="container mx-auto max-w-[1200px] bg-[#E5F4E9] rounded-[20px]  flex flex-col justify-between md:flex-row justify-betweenpx-[6px]">
+
+                <div class="max-w-[580px] max-h-[250px] gap-[50px] flex justify-between items-center bg-[#FCD5BA]  ">
+                    <div class="flex flex-col items-center p-[30px]">
+                        <p class="font-bold">Оформите карту <br> «Северяночка»</p>
+                        <p>И получайте бонусы при покупке <br> в магазинах и на  сайте</p>
+                    </div>
+                    <div>
+                        <img src="./imgs/salfetka.png" alt="art">
+                    </div>
+                </div>
+
+                <div class="max-w-[580px] max-h-[250px] gap-[100px] flex justify-between items-center bg-[#A7F3D0] ">
+                    <div class="flex flex-col items-center p-[30px]">
+                        <p class="font-bold">Покупайте <br> акционные товары</p>
+                        <p>И получайте вдвое больше <br> бонусов</p>
+                    </div>
+                    <div>
+                        <img src="./imgs/qizilkar.png" alt="art">
+                    </div>
+            </div>
+        </section> 
+
+
+
+        
+        <section>
+            <div class="ontainer mx-auto max-w-[1200px] flex justify-between items-center px-[6px]  pt-[20px]">
+                <p class="text-[36px] font-bold ">Наши магазины</p>
+                <p>More</p>
+            </div>
+        </section>
+
+        <section class="container mx-auto max-w-[1200px]">
+            <div class=" mx-right max-w-[800px]" >
+                <div class="flex  justify-between items-center gap-6 px-[6px] pt-[60px] pb-[100px]">
+
+                    <div class="flex flex-wrap justify-center gap-4 w-full max-w-[1200px] mx-auto">
+                        <button class="bg-white text-green-600 font-semibold max-w-full sm:w-[150px] h-[40px] rounded-xl border border-green-600 shadow-md hover:bg-green-600 hover:text-white hover:shadow-lg transition duration-300">
+                            Режим
+                        </button>
+                        <button class="bg-white text-green-600 font-semibold max-w-full sm:w-[150px] h-[40px] rounded-xl border border-green-600 shadow-md hover:bg-green-600 hover:text-white hover:shadow-lg transition duration-300">
+                            Режим
+                        </button>
+                        <button class="bg-white text-green-600 font-semibold max-w-full sm:w-[150px] h-[40px] rounded-xl border border-green-600 shadow-md hover:bg-green-600 hover:text-white hover:shadow-lg transition duration-300 ">
+                            Режим
+                        </button>
+                        <button class="bg-white text-green-600 font-semibold max-w-full sm:w-[150px] h-[40px] rounded-xl border border-green-600 shadow-md hover:bg-green-600 hover:text-white hover:shadow-lg transition duration-300">
+                            Режим
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto max-w-[1200px] flex justify-center items-center pb-[100px]">
+                <img src="./imgs/kartajoy.png" alt="art"class="w-full  object-cover">
+            </div>
+        </section>
+
+        <section>
+            <div class="ontainer mx-auto max-w-[1200px] flex justify-between items-center px-[6px]  pt-[10px]">
+                <p class="text-[36px] font-bold ">Статьи</p>
+                <p>More</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto max-w-[1200px] pb-[200px] pt-[20px] ">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-8 px-[6px]">
+                    
+                        <div class="max-w-[380px]">
+                            <img src="./imgs/stopper.png" alt="art">
+                            <p class="pt-[6px]">05.03.2021</p>
+                            <p class="font-bold py-[10px]">Режим использования масок и перчаток на территории магазинов</p>
+                            <p>Подробная информация о режимах использования масок и перчаток на 
+                            территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                            <div class="py-[20px]">
+                                <button class="bg-white text-green-600 font-semibold max-w-full sm:w-[150px] h-[40px] rounded-xl border border-green-600 shadow-md hover:bg-green-600 hover:text-white hover:shadow-lg transition duration-300 ">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    
+
+                    
+                        <div class="max-w-[380px]">
+                            <img src="./imgs/daraxt.png" alt="art">
+                            <p class="pt-[6px]">05.03.2021</p>
+                            <p class="font-bold py-[10px]">Режим использования масок и перчаток на территории магазинов</p>
+                            <p>Подробная информация о режимах использования масок и перчаток на 
+                            территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                            <div class="py-[20px]">
+                                <button class="bg-white text-green-600 font-semibold max-w-full sm:w-[150px] h-[40px] rounded-xl border border-green-600 shadow-md hover:bg-green-600 hover:text-white hover:shadow-lg transition duration-300 ">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    
+
+                    
+                        <div class="max-w-[380px]">
+                            <img src="./imgs/holmeva.png" alt="art">
+                            <p class="pt-[6px]">05.03.2021</p>
+                            <p class="font-bold py-[10px]">Режим использования масок и перчаток на территории магазинов</p>
+                            <p>Подробная информация о режимах использования масок и перчаток на 
+                            территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                            <div class="py-[20px]">
+                                <button class="bg-white text-green-600 font-semibold max-w-full sm:w-[150px] h-[40px] rounded-xl border border-green-600 shadow-md hover:bg-green-600 hover:text-white hover:shadow-lg transition duration-300 ">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    
+    
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section>
+
+            <div class="container mx-auto max-w-[1200px] px-[6px] pb-[20px]">
+                <div class="flex flex-col lg:flex-row justify-between items-center max-w-[1100px] items-center gap-[50px] ">
+                        <div class="flex flex-wrap items-center  max-w-[700px] gap-[20px]">
+                            <img src="./imgs/logo.png" alt="">
+                            <p>Компании</p>
+                            <p>Контакты</p>
+                            <p>Вакансии</p>
+                            <p>Статьи</p>
+                            <p class="w-full sm:w-auto">Политика обработки <br> персональных данных</p>
+                        </div>
+                        <div class="flex flex-col items-center max-w-[280px] gap-[10px] pt-[20px]">
+                            <img src="./img2/insta.png" alt="art"> 
+                            <img src="./img2/zasovka.png" alt="art" class="pl-[210px]" >
+                        </div>
+                </div>
+            </div>
+                
+
+        </section>
+    </footer>
+</body>
+</html>
