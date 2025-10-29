@@ -7,72 +7,90 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header class="fixed top-0 w-full bg-[white]">
+    <header class="fixed top-0 w-full bg-[white] z-50 shadow-md">
         <section class="px-[10px]">
-            <div class="container mx-auto max-w-[1200px] flex justify-between items-center pt-[20px] ">
-                <div class="flex justify-between items-center gap-2">
-                    <div class="flex justify-between items-center gap-2">
-                        <img src="./imgs/logo.png" alt="logo">
-                    </div>
-                    <div class="hidden lg:block">
-                        <p>CEVERONICHKA</p>
-                    </div>
+        <div class="container mx-auto max-w-[1200px] flex justify-between items-center pt-[20px] ">
+            <div class="flex justify-between items-center gap-2">
+                <img src="./imgs/logo.png" alt="logo">
+                <div class="hidden lg:block">
+                <p>CEVERONICHKA</p>
                 </div>
-
-                <div class=" hidden sm:flex lg:flex items-center gap-3 bg-[#70C05B] px-[20px] py-[8px] rounded-md cursor-pointer text-[white] ">
-                    <div>
-                        <img src="./imgs/3 chiziq.png" alt="chiziq " class=" w-[20px] h-[20px] bg-[#70C05B] ">
-                    </div>
-                    <div class="hidden lg:block">
-                        <p>Katalog</p>
-                    </div>
-                </div>
-
-                <div class="relative max-w-[350px]">
-                        <img 
-                        src="./imgs/lupa.png" 
-                        alt="search" 
-                        class="absolute  top-1/2 transform -translate-y-1/2 w-[50px] h-[40px] left-[200px] lg:left-[290px]">
-                    
-                        <input 
-                        type="text" 
-                        placeholder="Search" 
-                        class=" p-2 pl-2 border border-green-500 rounded-[10px] 
-                        focus:outline-none placeholder-gray w-[290px] lg:w-[350px]">
-                </div>
-
-                <div class="hidden sm:hidden md:flex justify-between items-center gap-6">
-                    <div class="  flex flex-col items-center">
-                        <img src="./imgs/yure.png" alt="yure">
-                        <p class="text-[14px]">Like</p>
-                    </div>
-
-                    <div class=" flex flex-col items-center">
-                        <img src="./imgs/box.png" alt="box">
-                        <p class="text-[14px]">Products</p>
-                    </div>
-
-                
-                        <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition-transform duration-300">
-                            <img src="./imgs/karzinka.png" alt="karzinka">
-                            <p class="text-[14px]">Karzinka</p>
-                        </div>
-                    
-
-                    <div class="flex justify-between items-center gap-2">
-                        <div class="flex items-center gap-[5px]">
-                            <img src="./imgs/avatar (1).png" alt="user">
-                        </div>
-                        <div class="hidden lg:block "> 
-                            <p>Aliksey</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+
+
+            <div class="hidden sm:flex lg:flex items-center gap-3 bg-[#70C05B] px-[20px] py-[8px] rounded-md cursor-pointer text-[white] ">
+                <img src="./imgs/3 chiziq.png" alt="chiziq " class=" w-[20px] h-[20px]">
+                <div class="hidden lg:block">
+                    <p>Katalog</p>
+                </div>
+            </div>
+
+            <div class="relative max-w-[350px]">
+                <img 
+                src="./imgs/lupa.png" 
+                alt="search" 
+                class="absolute top-1/2 transform -translate-y-1/2 w-[50px] h-[40px] left-[200px] lg:left-[290px]">
+            <input 
+                type="text" 
+                placeholder="Search" 
+                class="p-2 pl-2 border border-green-500 rounded-[10px] 
+                focus:outline-none placeholder-gray w-[290px] lg:w-[350px]">
+            </div>
+
+            <div class="hidden sm:hidden md:flex justify-between items-center gap-6">
+                <div class="flex flex-col items-center">
+                    <img src="./imgs/yure.png" alt="yure">
+                    <p class="text-[14px]">Like</p>
+                </div>
+
+            <div class="flex flex-col items-center">
+                <img src="./imgs/box.png" alt="box">
+                <p class="text-[14px]">Products</p>
+            </div>
+
+            <a href="./karzina.html">
+                <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition-transform duration-300">
+                    <img src="./imgs/karzinka.png" alt="karzinka">
+                    <p class="text-[14px]">Karzinka</p>
+                </div>
+            </a>
+
+            <div class="flex justify-between items-center gap-2">
+                <img src="./imgs/avatar (1).png" alt="user">
+                <div class="hidden lg:block"> 
+                    <p>Aliksey</p>
+                </div>
+            </div>
+            </div>
+        </div>
         </section>
-    
-    </header>  
+    </header>
+
+    <div class="fixed bottom-0 left-0 w-full bg-white border-t shadow-md flex justify-around items-center py-2 z-40 md:hidden">
+        <div class="flex flex-col items-center">
+            <img src="./imgs/3 chiziq.png" alt="menu" class="w-6 h-6">
+            <p class="text-[12px] text-[#70C05B]">Каталог</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="./imgs/yure.png" alt="like" class="w-6 h-6">
+            <p class="text-[12px]">Избранное</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="./imgs/box.png" alt="orders" class="w-6 h-6">
+            <p class="text-[12px]">Заказы</p>
+        </div>
+
+        <a href="./karzina.html">
+            <div class="flex flex-col items-center">
+                <img src="./imgs/karzinka.png" alt="cart" class="w-6 h-6">
+                <p class="text-[12px]">Корзина</p>
+            </div>
+        </a>
+
+        <div class="flex flex-col items-center">
+            <img src="./imgs/avatar (1).png" alt="user" class="w-6 h-6 rounded-full">
+        </div>
+    </div> 
 
     
     <main>
@@ -92,62 +110,17 @@
         </section>
         
         <section>
-            <div class="container mx-auto max-w-[1200px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   justify-items-center gap-8 px-[6px] pt-[60px] pb-[50px]">
+            <div id="card" class="container mx-auto max-w-[1200px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   justify-items-center gap-8 px-[6px] pt-[60px] pb-[50px]">
 
-                <div class="max-w-[270px]">
-                    <img src="./imgs/blinchik.png" alt="art">
-                    <div class="flex justify-between items-center py-[10px]">
-                        <p>44,50$</p>
-                        <p class="pr-[8px]">50,50$</p>
-                    </div>
-                    <p>Meal ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <img src="./imgs/yulduz2.png" alt="img" class="py-[10px]">
-                    <button class="border-2 border-green-500 text-green-500 font-semibold py-2  px-23 rounded-lg hover:bg-orange-500 hover:border-orange-500 hover:text-white transition duration-300">
-                        В корзину
-                    </button>
-                </div>
+                
 
-                <div class="max-w-[270px]">
-                    <img src="./imgs/sut.png" alt="art">
-                    <div class="flex justify-between items-center py-[10px]">
-                        <p>94,50$</p>
-                        <p class="pr-[8px]">20,71$</p>
-                    </div>
-                    <p>Beaf ipsum, dolor sit amet meal to eat.</p>
-                    <img src="./imgs/yulduz3.png" alt="img" class="py-[10px]">
-                    <button class="border-2 border-green-500 text-green-500 font-semibold py-2  px-23 rounded-lg hover:bg-orange-500 hover:border-orange-500 hover:text-white transition duration-300">
-                        В корзину
-                    </button>
-                </div>
-
-                <div class="max-w-[270px]">
-                    <img src="./imgs/kalbasa.png" alt="art">
-                    <div class="flex justify-between items-center py-[10px]">
-                        <p>24,40$</p>
-                        <p class="pr-[8px]">10,80$</p>
-                    </div>
-                    <p>Opsum, dolor sit amet consectetur adipisicing Suger.</p>
-                    <img src="./imgs/yulduz5.png" alt="img" class="py-[10px]">
-                    <button class="border-2 border-green-500 text-green-500 font-semibold py-2  px-23 rounded-lg hover:bg-orange-500 hover:border-orange-500 hover:text-white transition duration-300">
-                        В корзину
-                    </button>
-                </div>
-
-                <div class="max-w-[270px]">
-                    <img src="./imgs/sasika.png" alt="art">
-                    <div class="flex justify-between items-center py-[10px]">
-                        <p>40,50$</p>
-                        <p class="pr-[8px]">80,60$</p>
-                    </div>
-                    <p>Duit ipsum, dolor sit amet consectetur.</p>
-                    <img src="./imgs/yulduz4.5.png" alt="img" class="py-[10px]">
-                    <button class="border-2 border-green-500 text-green-500 font-semibold  py-2 px-23 rounded-lg hover:bg-orange-500 hover:border-orange-500 hover:text-white transition duration-300">
-                        В корзину
-                    </button>
-                </div>
 
             </div>
         </section>
+
+
+
+
 
         <section>
             <div class="ontainer mx-auto max-w-[1200px] flex justify-between items-center px-[6px]  pt-[20px]">
@@ -157,7 +130,7 @@
         </section>
         
         <section>
-            <div class="container mx-auto max-w-[1200px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   justify-items-center gap-8 px-[6px] pt-[60px] pb-[50px]">
+            <div id="novinki" class="container mx-auto max-w-[1200px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   justify-items-center gap-8 px-[6px] pt-[60px] pb-[50px]">
 
                 <div class="max-w-[270px]">
                     <img src="./imgs/kolsa.png" alt="art">
@@ -432,5 +405,8 @@
 
         </section>
     </footer>
+
+    <script src="./products-data/products-data/products-data.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>

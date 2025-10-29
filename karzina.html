@@ -7,75 +7,93 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header class="fixed top-0 w-full bg-[white] z-1000">
+    <header class="fixed top-0 w-full bg-[white] z-50 shadow-md">
         <section class="px-[10px]">
-            <div class="container mx-auto max-w-[1200px] flex justify-between items-center pt-[20px] ">
-                <div class="flex justify-between items-center gap-2">
-                    <div class="flex justify-between items-center gap-2">
-                        <img src="./imgs/logo.png" alt="logo">
-                    </div>
-                    <div class="hidden lg:block">
-                        <p>CEVERONICHKA</p>
-                    </div>
+        <div class="container mx-auto max-w-[1200px] flex justify-between items-center pt-[20px] ">
+            <div class="flex justify-between items-center gap-2">
+                <img src="./imgs/logo.png" alt="logo">
+                <div class="hidden lg:block">
+                <p>CEVERONICHKA</p>
                 </div>
-
-                <div class=" hidden sm:flex lg:flex items-center gap-3 bg-[#70C05B] px-[20px] py-[8px] rounded-md cursor-pointer text-[white] ">
-                    <div>
-                        <img src="./imgs/3 chiziq.png" alt="chiziq " class=" w-[20px] h-[20px] bg-[#70C05B] ">
-                    </div>
-                    <div class="hidden lg:block">
-                        <p>Katalog</p>
-                    </div>
-                </div>
-
-                <div class="relative max-w-[350px]">
-                        <img 
-                        src="./imgs/lupa.png" 
-                        alt="search" 
-                        class="absolute  top-1/2 transform -translate-y-1/2 w-[50px] h-[40px] left-[200px] lg:left-[290px]">
-                    
-                        <input 
-                        type="text" 
-                        placeholder="Search" 
-                        class=" p-2 pl-2 border border-green-500 rounded-[10px] 
-                        focus:outline-none placeholder-gray w-[290px] lg:w-[350px]">
-                </div>
-
-                <div class="hidden sm:hidden md:flex justify-between items-center gap-6">
-                    <div class="  flex flex-col items-center">
-                        <img src="./imgs/yure.png" alt="yure">
-                        <p class="text-[14px]">Like</p>
-                    </div>
-
-                    <div class=" flex flex-col items-center">
-                        <img src="./imgs/box.png" alt="box">
-                        <p class="text-[14px]">Products</p>
-                    </div>
-
-                    
-                        <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition-transform duration-300">
-                            <img src="./imgs/karzinka.png" alt="karzinka">
-                            <p class="text-[14px]">Karzinka</p>
-                        </div>
-                
-
-                    <div class="flex justify-between items-center gap-2">
-                    <div class="flex items-center gap-[5px]">
-                        <img src="./imgs/avatar (1).png" alt="user">
-                    </div>
-                    <div class="hidden lg:block "> 
-                        <p>Aliksey</p>
-                    </div>
-                    </div>
-                </div>
-
             </div>
+
+
+            <div class="hidden sm:flex lg:flex items-center gap-3 bg-[#70C05B] px-[20px] py-[8px] rounded-md cursor-pointer text-[white] ">
+                <img src="./imgs/3 chiziq.png" alt="chiziq " class=" w-[20px] h-[20px]">
+                <div class="hidden lg:block">
+                    <p>Katalog</p>
+                </div>
+            </div>
+
+            <div class="relative max-w-[350px]">
+                <img 
+                src="./imgs/lupa.png" 
+                alt="search" 
+                class="absolute top-1/2 transform -translate-y-1/2 w-[50px] h-[40px] left-[200px] lg:left-[290px]">
+            <input 
+                type="text" 
+                placeholder="Search" 
+                class="p-2 pl-2 border border-green-500 rounded-[10px] 
+                focus:outline-none placeholder-gray w-[290px] lg:w-[350px]">
+            </div>
+
+            <div class="hidden sm:hidden md:flex justify-between items-center gap-6">
+                <div class="flex flex-col items-center">
+                    <img src="./imgs/yure.png" alt="yure">
+                    <p class="text-[14px]">Like</p>
+                </div>
+
+            <div class="flex flex-col items-center">
+                <img src="./imgs/box.png" alt="box">
+                <p class="text-[14px]">Products</p>
+            </div>
+
+            <a href="./karzina.html">
+                <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition-transform duration-300">
+                    <img src="./imgs/karzinka.png" alt="karzinka">
+                    <p class="text-[14px]">Karzinka</p>
+                </div>
+            </a>
+
+            <div class="flex justify-between items-center gap-2">
+                <img src="./imgs/avatar (1).png" alt="user">
+                <div class="hidden lg:block"> 
+                    <p>Aliksey</p>
+                </div>
+            </div>
+            </div>
+        </div>
         </section>
-    
-    </header>  
+    </header>
+
+    <div class="fixed bottom-0 left-0 w-full bg-white border-t shadow-md flex justify-around items-center py-2 z-40 md:hidden">
+        <div class="flex flex-col items-center">
+            <img src="./imgs/3 chiziq.png" alt="menu" class="w-6 h-6">
+            <p class="text-[12px] text-[#70C05B]">Каталог</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="./imgs/yure.png" alt="like" class="w-6 h-6">
+            <p class="text-[12px]">Избранное</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="./imgs/box.png" alt="orders" class="w-6 h-6">
+            <p class="text-[12px]">Заказы</p>
+        </div>
+
+        <a href="./inde.html">
+            <div class="flex flex-col items-center">
+                <img src="./imgs/karzinka.png" alt="cart" class="w-6 h-6">
+                <p class="text-[12px]">Корзина</p>
+            </div>
+        </a>
+
+        <div class="flex flex-col items-center">
+            <img src="./imgs/avatar (1).png" alt="user" class="w-6 h-6 rounded-full">
+        </div>
+    </div> 
 
     <main>
-
+            
         <section>
             <div class="container mx-auto max-w-[1200px] px-[6px] pt-[10px] pb-[20px]">
                 <div class="max-w-[150px] flex justify-between items-center">
@@ -91,7 +109,7 @@
             </div>
         </section>
 
-        <section class="bg-[#FFF9F2] min-h-screen py-2 pt-[10px] px-4 md:px-10">
+        <section class="bg-[#FFF9F2]  py-2 pt-[10px] px-4 md:px-10">
         <div class="max-w-[1200px] mx-auto grid md:grid-cols-3 gap-8">
 
             <div class="md:col-span-2 space-y-4">
@@ -105,7 +123,7 @@
 
                 <div class="flex items-center justify-between bg-white p-4 rounded-xl shadow-sm">
                     <div class="flex items-center gap-3">
-                        <img src="./imgkarzinka/choy.png" class="w-16 h-16 rounded-lg object-cover" alt="">
+                        <img src="./imgkarzinka/choy.png" class="w-16 h-6 rounded-lg object-cover" alt="">
                         <div>
                             <p class="font-medium">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
                             <p class="text-gray-400 text-sm">44,9 р за шт.</p>
@@ -125,7 +143,7 @@
 
                     <div class="flex items-center justify-between bg-white p-4 rounded-xl shadow-sm ">
                         <div class="flex items-center gap-3">
-                                <img src="./imgkarzinka/choy.png" class="w-16 h-16 rounded-lg object-cover" alt="">
+                                <img src="./imgkarzinka/choy.png" class="w-16 h-6 rounded-lg object-cover" alt="">
                             <div>
                                 <p class="font-medium">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
                                 <p class="text-gray-400 text-sm">44,9 р за шт.</p>
@@ -148,7 +166,7 @@
                     
                     <div class="flex items-center justify-between bg-white p-4 rounded-xl shadow-sm ">
                         <div class="flex items-center gap-3">
-                                <img src="./imgkarzinka/choy.png" class="w-16 h-16 rounded-lg object-cover" alt="">
+                                <img src="./imgkarzinka/choy.png" class="w-16 h-6 rounded-lg object-cover" alt="">
                             <div>
                                 <p class="font-medium">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
                                 <p class="text-gray-400 text-sm">44,9 р за шт.</p>
@@ -171,7 +189,7 @@
                     
                     <div class="flex items-center justify-between bg-white p-4 rounded-xl shadow-sm ">
                         <div class="flex items-center gap-3">
-                                <img src="./imgkarzinka/choy.png" class="w-16 h-16 rounded-lg object-cover" alt="">
+                                <img src="./imgkarzinka/choy.png" class="w-16 h-6 rounded-lg object-cover" alt="">
                             <div>
                                 <p class="font-medium">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
                                 <p class="text-gray-400 text-sm">44,9 р за шт.</p>
@@ -192,14 +210,11 @@
                     </div>
                 </div>
 
-
-
                 <div class="bg-white rounded-xl shadow-md p-5 h-fit">
                     <div class="flex items-center gap-2 mb-3">
                         <input type="checkbox" class="w-4 h-4">
                         <p class="text-sm">Списать 200 р</p>
                     </div>
-    
 
                         <p class="text-gray-400 text-sm mb-3">На карте накоплено 200 р</p>
                     <div class="space-y-1 text-sm">
@@ -219,13 +234,13 @@
                 </div>
             </div>
         </section>
+    
 
-    </main>
+    </main> 
 
     <footer>
         <section>
-
-            <div class="container mx-auto max-w-[1200px] px-[6px] pb-[20px]">
+            <div class="container mx-auto max-w-[1200px] px-[6px] pt-[50px] pb-[20px]">
                 <div class="flex flex-col lg:flex-row justify-between items-center max-w-[1100px] items-center gap-[50px] ">
                         <div class="flex flex-wrap items-center  max-w-[700px] gap-[20px]">
                             <img src="./imgs/logo.png" alt="">
@@ -241,8 +256,6 @@
                         </div>
                 </div>
             </div>
-                
-
         </section>
     </footer> 
 
